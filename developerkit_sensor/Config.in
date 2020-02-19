@@ -1,0 +1,70 @@
+#
+# The configs required by AliOS Things
+#
+config AOS_BUILD_BOARD
+    string
+    default "developerkit"
+
+config AOS_BUILD_APP
+    string
+    default "developerkit_sensor"
+
+config AOS_SDK_PATH
+    string
+    default "D:/aliyun/AliOS-Things"
+
+#
+# The configs for app developerkit_sensor
+#
+config AOS_APP_DEVELOPERKIT_SENSOR
+    bool "AOS_APP_DEVELOPERKIT_SENSOR"
+    select AOS_COMP_NETMGR
+    select AOS_COMP_CLI
+    select AOS_COMP_CJSON
+    select AOS_COMP_SDK_DEVMODEL
+    default y
+
+if AOS_APP_DEVELOPERKIT_SENSOR
+# Add more configs here ...
+endif
+
+source "$AOS_SDK_PATH/3rdparty/experimental/fs/fatfs/Config.in"
+source "$AOS_SDK_PATH/3rdparty/experimental/fs/spiffs/Config.in"
+source "$AOS_SDK_PATH/board/developerkit/Config.in"
+source "$AOS_SDK_PATH/drivers/sal/gprs/sim800/Config.in"
+source "$AOS_SDK_PATH/drivers/sal/wifi/bk7231/Config.in"
+source "$AOS_SDK_PATH/drivers/sal/wifi/esp8266/Config.in"
+source "$AOS_SDK_PATH/drivers/sal/wifi/gt202/Config.in"
+source "$AOS_SDK_PATH/drivers/sal/wifi/mk3060/Config.in"
+source "$AOS_SDK_PATH/drivers/sensor/Config.in"
+source "$AOS_SDK_PATH/kernel/bus/mbmaster/Config.in"
+source "$AOS_SDK_PATH/kernel/debug/Config.in"
+source "$AOS_SDK_PATH/kernel/fs/kv/Config.in"
+source "$AOS_SDK_PATH/kernel/fs/vfs/Config.in"
+source "$AOS_SDK_PATH/kernel/init/Config.in"
+source "$AOS_SDK_PATH/kernel/rhino/Config.in"
+source "$AOS_SDK_PATH/middleware/uagent/ota/2ndboot/Config.in"
+source "$AOS_SDK_PATH/middleware/uagent/ulog/Config.in"
+source "$AOS_SDK_PATH/network/nal/sal/Config.in"
+source "$AOS_SDK_PATH/network/netmgr/Config.in"
+source "$AOS_SDK_PATH/network/yloop/Config.in"
+source "$AOS_SDK_PATH/osal/aos/Config.in"
+source "$AOS_SDK_PATH/platform/arch/arm/armv7m/Config.in"
+source "$AOS_SDK_PATH/platform/mcu/stm32l4xx_cube/Config.in"
+source "$AOS_SDK_PATH/utility/libc/Config.in"
+source "$AOS_SDK_PATH/utility/mbedtls/Config.in"
+source "$AOS_SDK_PATH/middleware/linkkit/infra/Config.in"
+source "$AOS_SDK_PATH/middleware/linkkit/wrappers/Config.in"
+source "$AOS_SDK_PATH/middleware/linkkit/Config.in"
+source "$AOS_SDK_PATH/middleware/linkkit/certs/Config.in"
+source "$AOS_SDK_PATH/middleware/linkkit/dev_model/Config.in"
+source "$AOS_SDK_PATH/middleware/linkkit/dev_reset/Config.in"
+source "$AOS_SDK_PATH/middleware/linkkit/dev_sign/Config.in"
+source "$AOS_SDK_PATH/middleware/linkkit/dynamic_register/Config.in"
+source "$AOS_SDK_PATH/middleware/linkkit/http2/Config.in"
+source "$AOS_SDK_PATH/middleware/linkkit/infra/Config.in"
+source "$AOS_SDK_PATH/middleware/linkkit/iot_coap/Config.in"
+source "$AOS_SDK_PATH/middleware/linkkit/iot_http/Config.in"
+source "$AOS_SDK_PATH/middleware/linkkit/mqtt/Config.in"
+source "$AOS_SDK_PATH/middleware/linkkit/wifi_provision/Config.in"
+source "$AOS_SDK_PATH/middleware/linkkit/wrappers/Config.in"
