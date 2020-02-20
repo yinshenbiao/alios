@@ -1,0 +1,20 @@
+#define PRODUCT_KEY "a1jvfVfmGu5"
+#define PRODUCT_SECRET "f1V3Oj6W7dFaBU1c"
+#define DEVICE_NAME "developerkit_01"
+#define DEVICE_SECRET "QvAXNx8ES1G3tLU5HjrvY2tQSgRVkfoD"
+
+
+
+
+
+#define PRODUCT_KEY "a1dU03ha9Hc"
+#define PRODUCT_SECRET "BVOv6eIStN4f8zZ2"
+#define DEVICE_NAME "DeveloperKit_Sensor01"
+#define DEVICE_SECRET "CWbJCWuqf0WHeBnqug6CgNnTeZy25lQG"
+
+
+
+#define PRODUCT_KEY "a1595UIAv5v"
+#define PRODUCT_SECRET "OsoYgqkXmr6SCCdQ"
+#define DEVICE_NAME "device1"
+#define DEVICE_SECRET "QiQVqiBQGdMuNdBOu8nY2lYTr0WmgGWr"
